@@ -18,19 +18,20 @@ class FileTestController extends Controller
 
     function index()
     {
-        $authUserID = Auth::user()->id;
-        $totalSize = 0;
-        $path = public_path('files/' . $authUserID);
-        $iterator = new RecursiveIteratorIterator(
-            new RecursiveDirectoryIterator($path)
-        );
-
-        foreach ($iterator as $file) {
-            $totalSize += $file->getSize();
-        }
+//        $authUserID = Auth::user()->id;
+//        $totalSize = 0;
+//        $path = public_path('files/' . $authUserID);
+//        $iterator = new RecursiveIteratorIterator(
+//            new RecursiveDirectoryIterator($path)
+//        );
+//
+//        foreach ($iterator as $file) {
+//            $totalSize += $file->getSize();
+//        }
 //        $bytes = number_format($totalSize / 1048576, 2);
 //        echo $bytes;
-        $totalSize=$this->formatBytes($totalSize);
+//        $totalSize=$this->formatBytes($totalSize);
+        $totalSize=100;
 
         return view('vendor.laravel-filemanager.index')->with('totalSize', $totalSize);
     }

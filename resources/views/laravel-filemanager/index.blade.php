@@ -51,8 +51,8 @@
     </ul>
   </div>
 </nav>
-{{php_ini_loaded_file()}}
-{{$totalSize}}
+{{--{{php_ini_loaded_file()}}--}}
+{{--{{$totalSize}}--}}
   <div class="container-fluid" id="wrapper">
     <div class="row">
       <div class="col-sm-2 hidden-xs">

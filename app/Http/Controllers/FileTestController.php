@@ -33,7 +33,7 @@ class FileTestController extends Controller
 //        $totalSize=$this->formatBytes($totalSize);
         $totalSize=100;
 
-        return view('vendor.laravel-filemanager.index')->with('totalSize', $totalSize);
+        return view('laravel-filemanager.index')->with('totalSize', $totalSize);
     }
 
     function formatBytes($bytes, $precision = 3) {
